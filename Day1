@@ -1,3 +1,4 @@
+
 Machine learning models can be classified into following two categories:
 o	Supervised learning method:Past data with output or labels is available to build the model
   	Regression: The output variable is continuous in nature
