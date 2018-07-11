@@ -1,1 +1,50 @@
+Machine learning models can be classified into following two categories:
+o	Supervised learning method:Past data with output or labels is available to build the model
+  	Regression: The output variable is continuous in nature
+  	Classification: The output variable is categorical in nature
+o	Unsupervised learning method: Past data with output or labels are not available
+  	Clustering: No pre-defined notion of outputs/labels is there, it is just the assignment of outputs into subsets or clusters having same sense or which are related by some data attributes
+
+
+Past data set is divided into two parts during supervised learning method(train and test):
+o	Training data  is used for the model to learn during modelling
+o	Testing data is used by the trained model for prediction and model evaluation
+
+Linear Regression can be of two types
+o	Simple Linear Regression- Number of independent variable is 1 i.e. univariate
+o	Multiple Linear Regression- Number of independent variable is more than 1 i.e. multivariate
+
+The equation of the best fit regression line Y = β₀ + β₁X can be found by minimising the cost function i.e. the RSS[Residual Sum of Squares] in this case, using the Ordinary Least Squares method) which is done using the following two methods:
+Ways to minimize cost function-
+-Differentiation
+-Gradient Descent Method
+
+The strength of a linear regression model is mainly explained by R²
+where, R²=1- RSS/TSS
+where, RSS- Residual Sum of Squares
+       TSS- Total Sum of Squares
+       
+       RSS= Sigma[(Yactual-Ypredicted)²]
+       TSS= (Y1-Y')² + ... + (Yn-Y')²
+       Y'= Average value of Y
+       
+Significance of R²-
+For a model to be a good model, the value of R² should be nearest to 1.
+
+Residual Square Error- 
+RSE=√RSS/df
+df- n-2, n is the number of datapoints
+Disadvantage of using RSS and RSE-
+RSS is a absolute quantity and it will depend on scale of Y which is also the case with RSE, therefore it is good to use R² which is a relative measure which normalizes with TSS.
+
+
+ 
+
+
+
+
+
+
+
+  
 
