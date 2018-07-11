@@ -1,1 +1,45 @@
 
+Simple Linear Regression
+
+Linear regression models are used to show or predict the relationship between two variables or factors. The factor that is being predicted (the factor that the equation solves for) is called the dependent variable. The factors that are used to predict the value of the dependent variable are called the independent variables.
+In simple linear regression, each observation consists of two values. One value is for the dependent variable and one value is for the independent variable.
+
+
+Simple Linear Regression Analysis The simplest form of a regression analysis uses on dependent variable and one independent variable. 
+In this simple model, a straight line approximates the relationship between the dependent variable and the independent variable.
+It is assumed that the two variables are linearly related.
+
+In this model we are trying to find the 'best fit line' 
+The Regression equation is represented as y=(β0 +β1 x)
+where β0 is the intercept
+      β1 is the slope
+If the graphed line in a simple linear regression is flat (not sloped), there is no relationship between the two variables. 
+If the regression line slopes upward with the lower end of the line at the y intercept (axis) of the graph, and the upper end of line extending upward into the graph field, away from the x intercept (axis) a positive linear relationship exists.
+If the regression line slopes downward with the upper end of the line at the y intercept (axis) of the graph, and the lower end of line extending downward into the graph field, toward the x intercept (axis) a negative linear relationship exists.
+
+
+Performing Simple Linear Regression
+
+Step 1
+
+Import the Libraries
+Import the dataset
+Handling the missing data
+Splitting the dataset into train and test by importing train_test_split from  sklearn.cross_validation 
+
+Step 2
+
+To fit the dataset into the model we will use the LinearRegression class in the sklearn.linear_model library
+Then we make an object of this class LinearRegression.
+Now we will fit the regressor object into our dataset using fit() method of LinearRegression class.
+
+Step 3
+
+Now predict the value using the test set.
+To predict the value we use predict() method of LinearRegression class on the regressor we trained in previous step
+
+Step 4
+
+Last and the final step is visualization using matplotlib.pyplot
+Plotting a scatter plot of our training set result and test set result to see how close our model predicted the values.
+
